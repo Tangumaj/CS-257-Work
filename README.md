@@ -1,2 +1,4 @@
 # CS-257-Work
-My work for CS 257 @ Carleton College
+Created 03-29-2024
+
+A repository for the work I have completed in CS 257
