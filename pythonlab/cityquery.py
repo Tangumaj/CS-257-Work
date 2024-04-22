@@ -29,4 +29,4 @@ row2 = cur.fetchone()
 if row2 == None:
     print("Error")
 else:
-    print(row[0])
+    print(row[1])
