@@ -31,4 +31,4 @@ row2 = cur2.fetchone()
 if row2 == None:
     print("Error")
 else:
-    print(row[1])
+    print(row[0])
