@@ -28,13 +28,13 @@ sql2 = "SELECT * FROM cities ORDER BY pop DESC"
 cur2.execute( sql2 )
 row2 = cur2.fetchone()
 
-print("Largest population", row2[0])
+print("Largest population:", row2[0])
 
 cur3 = conn.cursor()
 
-sql3 = "SELECT * FROM cities WHERE city='Minnesota' ORDER BY pop ASC"
+sql3 = "SELECT * FROM cities WHERE states='Minnesota' ORDER BY pop ASC"
 
 cur3.execute( sql3 )
 row3 = cur3.fetchone()
 
-print("Largest population", row3[0])
+print("city in Minnesota with the least population:", row3[0])
