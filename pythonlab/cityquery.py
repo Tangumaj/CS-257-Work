@@ -18,5 +18,5 @@ row = cur.fetchone()
 if row == None:
     print("Not found, please look for another city")
 else:
-    print( "Lat: %d", row[3] ) 
-    print( "Lon: %d", row[4] ) 
+    print( "Lat: ", row[3] ) 
+    print( "Lon: ", row[4] ) 
