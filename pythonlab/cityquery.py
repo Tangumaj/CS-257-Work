@@ -9,6 +9,6 @@ conn = psycopg2.connect(
     
 cur = conn.cursor()
 
-sql = "SELECT Northfield FROM cities"
+sql = "SELECT * FROM cities WHERE city='northfield'"
     
 cur.execute( sql )
