@@ -21,7 +21,7 @@ else:
     print( "Lat: ", row[3] ) 
     print( "Lon: ", row[4] ) 
 
-sql2 = "SELECT pop FROM cities ORDER BY DESC"
+sql2 = "SELECT pop FROM cities ORDER BY pop DESC"
 
 cur.execute( sql2 )
 row2 = cur.fetchone()
