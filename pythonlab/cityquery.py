@@ -20,3 +20,13 @@ if row == None:
 else:
     print( "Lat: ", row[3] ) 
     print( "Lon: ", row[4] ) 
+
+sql2 = "SELECT pop FROM cities ORDER BY DESC"
+
+cur.execute( sql2 )
+row2 = cur.fetchone()
+
+if row2 == None:
+    print("Error")
+else:
+    print(row[0])
