@@ -12,8 +12,19 @@ conn = psycopg2.connect(
     
 cur = conn.cursor()
 
-sql = "psql -f createCities.sql"
-sql1 = " psql -f createTable.sql"
+sql = """DROP TABLE IF EXISTS cities;
+CREATE TABLE cities (
+  city text,
+  states text,
+  pop real,
+  lat real,
+  lon real
+);"""
+sql1 = """DROP TABLE IF EXISTS states;
+CREATE TABLE states (
+    code text,
+    pop real
+);"""
     
 cur.execute( sql )
 cur.execute( sql1 )
