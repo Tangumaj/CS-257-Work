@@ -28,7 +28,4 @@ sql2 = "SELECT * FROM cities ORDER BY pop DESC"
 cur2.execute( sql2 )
 row2 = cur2.fetchone()
 
-if row2 == None:
-    print("Error")
-else:
-    print(row[0])
+print("Largest population", row[0])
