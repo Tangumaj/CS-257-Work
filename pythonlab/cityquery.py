@@ -25,7 +25,7 @@ cur2 = conn.cursor()
 
 sql2 = "SELECT * FROM cities ORDER BY pop DESC"
 
-cur.execute( sql2 )
+cur2.execute( sql2 )
 row2 = cur2.fetchone()
 
 if row2 == None:
