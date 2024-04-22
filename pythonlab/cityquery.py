@@ -16,5 +16,5 @@ cur.execute( sql )
 row = cur.fetchone()
 
 for i in row:
-    print( i[3] )
-    print( i[4] )
+    print( type(i[3]) )
+    print( type(i[4]) )
