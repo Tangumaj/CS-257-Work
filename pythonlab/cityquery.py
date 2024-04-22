@@ -12,3 +12,5 @@ cur = conn.cursor()
 sql = "SELECT * FROM cities WHERE city='Marysville'"
     
 cur.execute( sql )
+
+row = cur.fetchone()
