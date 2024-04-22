@@ -28,4 +28,4 @@ sql2 = "SELECT * FROM cities ORDER BY pop DESC"
 cur2.execute( sql2 )
 row2 = cur2.fetchone()
 
-print("Largest population", row[0])
+print("Largest population", row2[0])
