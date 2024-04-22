@@ -15,4 +15,8 @@ cur.execute( sql )
 
 row = cur.fetchone()
 
-print(row)
+for i in row:
+    if i == 3:
+        print(i)
+    elif i == 4:
+        print(i)
