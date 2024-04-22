@@ -15,6 +15,8 @@ cur.execute( sql )
 
 row = cur.fetchone()
 
-for i in row:
+if row == None:
+    print("Not found, please look for another city")
+else:
     print( row[3] ) 
     print( row[4] ) 
