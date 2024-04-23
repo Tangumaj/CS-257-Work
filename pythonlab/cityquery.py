@@ -38,3 +38,12 @@ cur3.execute( sql3 )
 row3 = cur3.fetchone()
 
 print("city in Minnesota with the least population:", row3[0])
+
+cur4 = conn.cursor()
+
+sql4 = "SELECT * FROM cities ORDER BY lat ASC"
+
+cur4.execute( sql3 )
+row4 = cur4.fetchone()
+
+print("Eastmost City:", row4[0])
