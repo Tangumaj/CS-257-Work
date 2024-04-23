@@ -74,7 +74,7 @@ if len(val) == 2:
     row8 = cur5.fetchone()
     state = row8[1]
 
-    sql9 = "SELECT * FROM cities WHERE state = %s"
+    sql9 = "SELECT * FROM cities WHERE states = %s"
 
     cur5.execute(sql9, [state])
     cities_from_state = cur5.fetchall()
@@ -85,7 +85,7 @@ if len(val) == 2:
 
     print(total)
 else:
-    sql10 = "SELECT * FROM cities WHERE state = %s"
+    sql10 = "SELECT * FROM cities WHERE states = %s"
     state_abb1 = val
     cur5.execute(sql10, [state_abb1])
     cities_from_state = cur5.fetchall()
