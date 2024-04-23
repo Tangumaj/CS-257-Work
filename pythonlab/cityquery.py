@@ -67,7 +67,7 @@ print("Northmost City:", row7[0])
 val = input("please enter a state: ")
 cur5 = conn.cursor()
 
-sql8 = "SELECT * FROM cities WHERE states='%s' SUM(pop) as total_pop FROM cities"
+sql8 = "SELECT * FROM cities WHERE states=%s SUM(pop) as total_pop FROM cities"
 
 state_abb1 = val
     
