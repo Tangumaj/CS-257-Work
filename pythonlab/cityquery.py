@@ -42,8 +42,24 @@ print("city in Minnesota with the least population:", row3[0])
 cur4 = conn.cursor()
 
 sql4 = "SELECT * FROM cities ORDER BY lat ASC"
+sql5 = "SELECT * FROM cities ORDER BY lat DEC"
+sql6 = "SELECT * FROM cities ORDER BY lon ASC"
+sql7 = "SELECT * FROM cities ORDER BY lon DEC"
 
 cur4.execute( sql4 )
 row4 = cur4.fetchone()
 
+cur4.execute( sql5 )
+row5 = cur4.fetchone()
+
+cur4.execute( sql6 )
+row6 = cur4.fetchone()
+
+cur4.execute( sql7 )
+row7 = cur4.fetchone()
+
+
 print("Eastmost City:", row4[0])
+print("Westmost City:", row5[0])
+print("Southmost City:", row6[0])
+print("Northmost City:", row7[0])
