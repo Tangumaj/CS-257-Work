@@ -23,6 +23,7 @@ CREATE TABLE cities (
 sql1 = """DROP TABLE IF EXISTS states;
 CREATE TABLE states (
     code text,
+    state text,
     pop real
 );"""
     
