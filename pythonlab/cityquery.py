@@ -63,3 +63,15 @@ print("Eastmost City:", row4[0])
 print("Westmost City:", row5[0])
 print("Southmost City:", row6[0])
 print("Northmost City:", row7[0])
+
+val = input("please enter a state: ")
+cur5 = conn.cursor()
+
+sql8 = "SELECT * FROM cities WHERE abb = %s SUM(pop) as total_pop FROM cities"
+
+state_abb1 = val
+    
+cur5.execute( sql8, [state_abb1]  )
+row8 = cur5.fetchone()
+
+print("Total population by cities: ", row8[2])
