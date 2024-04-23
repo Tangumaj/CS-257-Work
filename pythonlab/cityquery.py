@@ -43,7 +43,7 @@ cur4 = conn.cursor()
 
 sql4 = "SELECT * FROM cities ORDER BY lat ASC"
 
-cur4.execute( sql3 )
+cur4.execute( sql4 )
 row4 = cur4.fetchone()
 
 print("Eastmost City:", row4[0])
