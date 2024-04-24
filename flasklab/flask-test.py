@@ -37,13 +37,13 @@ def my_pop(abbrev):
     
     cur = conn.cursor()
 
-    sql = "SELECT * FROM states WHERE code=%s"
+    sql = "SELECT * FROM states WHERE code=%s;"
     
     cur.execute( sql, [abbrev] )
     
     row = cur.fetchone()
     
-    return "The population is: " + str(row[2])
+    return "The population is: " + str(row[2]);
 
 
 if __name__ == '__main__':
