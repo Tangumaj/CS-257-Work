@@ -26,7 +26,7 @@ def my_add(num1, num2):
     return "The result is " + num
 
 @app.route('/pop/abbrev')
-def my_pop(abbrev)
+def my_pop(abbrev):
     
     conn = psycopg2.connect(
     host="localhost",
