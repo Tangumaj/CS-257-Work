@@ -29,15 +29,15 @@ def my_add(num1, num2):
 def my_pop(abbrev):
     
     conn = psycopg2.connect(
-    host="localhost",
-    port=5432,
-    database="tangumaj",
-    user="tangumaj",
-    password="ardi363puppy")
+        host="localhost",
+        port=5432,
+        database="tangumaj",
+        user="tangumaj",
+        password="ardi363puppy")
     
     cur = conn.cursor()
 
-    sql = "SELECT * FROM states WHERE states=%s"
+    sql = "SELECT * FROM states WHERE code=%s"
     
     cur.execute( sql, [abbrev] )
     
