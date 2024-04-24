@@ -20,7 +20,9 @@ def my_color(word1):
 def my_add(num1, num2):
     a = int(num1)
     b = int(num2)
-    return a + b
+    add = a + b
+    num = str(add)
+    return num
 
 if __name__ == '__main__':
     my_port = 5227
