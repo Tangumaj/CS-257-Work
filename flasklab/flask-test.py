@@ -42,8 +42,11 @@ def my_pop(abbrev):
     cur.execute( sql, [abbrev] )
     
     row = cur.fetchone()
-    
-    return "The population is: " + str(row[2]);
+
+    if row == None:
+        print("Not found, please look for another city")
+    else:
+        return "The population is: " + str(row[2]);
 
 
 if __name__ == '__main__':
