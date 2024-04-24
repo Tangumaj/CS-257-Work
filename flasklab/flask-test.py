@@ -43,10 +43,7 @@ def my_pop(abbrev):
     
     row = cur.fetchone()
     
-    if row == None:
-        return "Not found, please look for another city"
-    else:
-        return "The population is: " + str(row[2])
+    return "The population is: " + str(row[2])
 
 
 if __name__ == '__main__':
