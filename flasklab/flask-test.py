@@ -22,7 +22,7 @@ def my_add(num1, num2):
     b = int(num2)
     add = a + b
     num = str(add)
-    return num
+    return "The result is" + num
 
 if __name__ == '__main__':
     my_port = 5227
