@@ -25,7 +25,7 @@ def my_add(num1, num2):
     num = str(add)
     return "The result is " + num
 
-@app.route('/pop/abbrev')
+@app.route('/pop/<abbrev>')
 def my_pop(abbrev):
     
     conn = psycopg2.connect(
@@ -44,9 +44,9 @@ def my_pop(abbrev):
     row = cur.fetchone()
     
     if row == None:
-        print("Not found, please look for another city")
+        return "Not found, please look for another city"
     else:
-        print( "The population is: ", str(row[2]) ) 
+        return "The population is: " + str(row[2])
 
 
 if __name__ == '__main__':
