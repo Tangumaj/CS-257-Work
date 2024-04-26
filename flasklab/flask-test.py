@@ -48,7 +48,7 @@ def my_pop(abbrev):
     else:
         return "The population is: " + str(row[2]);
 
-@app.route('/HTML)
+@app.route('/work)
 def my_HTML():
     return render_template("random.html~")
            
