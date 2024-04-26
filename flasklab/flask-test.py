@@ -48,7 +48,10 @@ def my_pop(abbrev):
     else:
         return "The population is: " + str(row[2]);
 
-
+@app.route('/HTML)
+def my_HTML():
+    return render_template("random.html~")
+           
 if __name__ == '__main__':
     my_port = 5227
     app.run(host='0.0.0.0', port = my_port) 
