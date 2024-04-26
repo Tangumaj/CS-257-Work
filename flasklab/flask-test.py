@@ -1,5 +1,6 @@
 import flask
 import psycopg2
+from flask import render_template
 
 app = flask.Flask(__name__)
 
