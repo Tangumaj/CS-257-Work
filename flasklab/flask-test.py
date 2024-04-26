@@ -51,7 +51,7 @@ def my_pop(abbrev):
 
 @app.route('/work')
 def my_HTML():
-    return render_template("random.html~")
+    return render_template("random.html")
            
 if __name__ == '__main__':
     my_port = 5227
