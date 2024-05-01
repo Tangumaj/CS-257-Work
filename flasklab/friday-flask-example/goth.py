@@ -16,7 +16,7 @@ def rand(low, high):
     high_int = int(high)
     
     num = random.randint(low_int, high_int)
-    names = [Abigail, Zena, Bella, Dulce, Fara, Gina, David, Angel, Maurice, Sameer]
+    names = ["Abigail", "Zena", "Bella", "Dulce", "Fara", "Gina", "David", "Angel", "Maurice", "Sameer"]
     
     ran = names[num]
     return render_template("random.html", randNum = ran)
