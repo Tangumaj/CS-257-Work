@@ -48,10 +48,6 @@ def my_pop(abbrev):
         return "Not found, please look for another city"
     else:
         return "The population is: " + str(row[2]);
-
-@app.route('/')
-def my_HTML():
-    return render_template("random.html")
            
 if __name__ == '__main__':
     my_port = 5227
