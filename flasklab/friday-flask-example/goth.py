@@ -16,7 +16,10 @@ def rand(low, high):
     high_int = int(high)
     
     num = random.randint(low_int, high_int)
-    return render_template("random.html", randNum = num)
+    names = ["Abigail", "Zena", "Bella", "Dulce", "Fara", "Gina", "David", "Angel", "Maurice", "Sameer"]
+    
+    ran = names[num]
+    return render_template("random.html", randNum = ran)
 
 if __name__ == '__main__':
     my_port = 5227

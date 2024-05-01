@@ -2,20 +2,14 @@
 <html>
  
 <head>
-    <title>Fun With Random Numbers</title>
+    <title>Random Name Generator</title>
 </head>
  
 <body>
-    <h2>What Type of Random Number Would You Like?</h2>
+    <h2>Want a random name? Can't decide? We're here to help!</h2>
 
-    <a href="/rand/1/10">
-      <button>A Small Random Number</button>
-    </a>
-
-    &nbsp &nbsp &nbsp
-    
-    <a href="/rand/1000/2000">
-      <button>A Big Random Number</button>
+    <a href="/rand/0/9">
+      <button>Generate a name!!</button>
     </a>
 </body>
  
