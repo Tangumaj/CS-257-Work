@@ -68,7 +68,7 @@ val = input("please enter a state: ")
 cur5 = conn.cursor()
 
 if len(val) == 2:
-    sql8 = "SELECT *FROM states WHERE code = %s"
+    sql8 = "SELECT * FROM states WHERE code = %s"
     state_abb1 = val
     cur5.execute(sql8, [state_abb1])
     row8 = cur5.fetchone()
